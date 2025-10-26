@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تواصل معنا</title>
     
-    <!-- === أيقونة الموقع (Favicon) - تظهر في تبويب المتصفح === -->
-    <!-- استبدل الروابط أدناه بصورة شعارك بالأحجام المناسبة -->
+    <!-- أيقونة الموقع (Favicon) -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://www2.0zz0.com/2025/10/26/20/127109061.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://www2.0zz0.com/2025/10/26/20/127109061.png">
 
@@ -35,7 +34,7 @@
 
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: var(--bg-primary);
+            background-color: var(--bg-primary); /* لون احتياطي */
             color: var(--text-primary);
             min-height: 100vh;
             display: flex;
@@ -43,6 +42,26 @@
             align-items: center;
             padding: 40px 20px;
             line-height: 1.7;
+            position: relative; /* مهم لتحديد موضع الطبقة */
+            
+            /* === رابط صورة الخلفية: استبدل الرابط أدناه بصورة شركتك === */
+            background-image: url('https://www2.0zz0.com/2025/10/26/20/127109061.png');
+            
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* لجعل الخلفية ثابتة عند التمرير */
+        }
+
+        /* === الطبقة الشبه شفافة فوق الخلفية === */
+        body::before {
+            content: '';
+            position: fixed; /* ثابتة حتى مع التمرير */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 26, 26, 0.8); /* طبقة داكنة بنفس لون الخلفية مع شفافية */
+            z-index: -1; /* لوضع الطبقة خلف المحتوى */
         }
 
         /* --- الحاوية الرئيسية (بطاقة فاخرة) --- */
@@ -251,8 +270,8 @@
             <div class="profile-logo">
                 <img src="https://www2.0zz0.com/2025/10/26/20/127109061.png" alt="شعار الموقع">
             </div>
-            <h1>كيان</h1>
-            <p>للدعاية والاعلان</p>
+            <h1>اسم الشركة العالمية</h1>
+            <p>الريادة والابتكار في كل خطوة</p>
         </header>
 
         <div class="divider"></div>
@@ -261,8 +280,8 @@
         <section class="contact-info">
             <ul class="info-list">
                 <li><i class="fas fa-phone"></i> <a href="tel:+201030566078">+201030566078</a></li>
-                <li><i class="fas fa-envelope"></i> <a href="mailto:contact@globalcorp.com">contact@globalcorp.com</a></li>
-                <li><i class="fas fa-map-marker-alt"></i> <span>العنوان، شارع الأعمال، دبي، الإمارات</span></li>
+                <li><i class="fas fa-envelope"></i> <a href="kian.adv.2025@gmail.com">kian.adv.2025@gmail.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> <span>العنوان، شبرا الخيمة</span></li>
             </ul>
         </section>
 
@@ -271,10 +290,10 @@
         <!-- === قسم الروابط الاجتماعية === -->
         <section class="social-links">
             <ul class="social-links-list">
-                <li><a href="https://linkedin.com/company/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-                <li><a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://facebook.com/your-profile" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                <li><a href="https://instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D8%AD%D9%85%D8%AF-90ba85241/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                <li><a href="https://x.com/2m2009" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.facebook.com/mhmd.abw.ywsf.312557" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/mohamed_ahmed_abo_yossef/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
             </ul>
         </section>
         
@@ -297,11 +316,10 @@
 
         <!-- === توقيع المصمم === -->
         <footer class="design-credit">
-            <p>© 2024 Global Corp. | Designed by <a href="https://your-website.com" target="_blank">Your Agency</a></p>
+            <p>© 2025 Global Corp. | Designed by <a href="https://your-website.com" target="_blank">kyain for advertising</a></p>
         </footer>
 
     </main>
 
 </body>
 </html>
-
